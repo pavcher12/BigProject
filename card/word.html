@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cardimg {
+            width: 150px;
+        }
+        .card1 {
+           padding: 10px;
+            width: 300px;
+              border-style: solid;
+            border-width: 0.01px;
+            box-shadow: 0 0 4px;
+            border-radius: 8px;
+        }
+        .card {
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .cardimg {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .textword {
+            margin-bottom: 0px;
+        }
+        .rate {
+            margin-bottom: 10px;
+        }
+        .lorem {
+            margin-bottom: 10px;
+        }
+        .details {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #0b0;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+           
+        }
+        .details:hover {
+            background-color: rgb(46, 184, 46);
+        }
+        .detailsdiv {
+            display: flex;
+            justify-content: center;
+        }
+        .buttondetails {
+            display: flex;
+            justify-content: center;
+        }
+        .cardimgdiv {
+            display: flex;
+            justify-content: center;
+        }
+        .textword {
+            text-align: center;
+        }
+        .rate {
+            text-align: center;
+        }
+        .lorem {
+            text-align: justify;
+        }
+        .modal {
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        } 
+        .modal:target {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        .modal-content {
+            width: 80%;
+            max-width: 800px;
+            height: 500px;
+            position: relative;
+            padding: 10px;
+        }
+        .modal iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .close-btn {
+            position: absolute;
+            color: white;
+            font-size: 30px;
+            right: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card1">
+            <div class="cardimgdiv">
+                <img class="cardimg" src="../picture/word.png" alt="">
+                                                                    </div>
+                                                                    <div class="centerdiv1">
+                                                                        <div class="centerdiv">
+                                                                        <h2 class="textword">Mincrosoft word!!!</h2>
+                                                                    <h3 class="rate">Rate : &#9733;&#9733;&#9733;&#9733;</h3>
+                                                                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, neque deleniti eum tenetur dignissimos hic sapiente voluptatem cupiditate sed, facere debitis laboriosam saepe, eligendi voluptate eos! Accusamus, cum ad? Doloribus.</p><hr> 
+                                                                    </div>
+                                                                    </div>
+            
+                <div class="buttondetails">
+                    <a href="#popupModal" class="details">Details</a>
+                </div>
+                
+            <div id="popupModal" class="modal">
+            <div class="modal-content">
+              <a href="#sht_scroll" class="close-btn">&times;</a>
+              <iframe src="../details/details.html"></iframe>
+            </div>
+          </div>
+    </div>
+    
+</body>
+</html>
